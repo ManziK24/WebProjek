@@ -1,0 +1,67 @@
+:root {
+  /*colorscheme*/
+  --background: #DAD7CD; /*dust grey*/
+  --text: #000000; /*black*/
+  --light: #A3B18A; /*Dry Sage*/
+  --medium: #588157; /*Fern*/
+  --dark: #3A5A40; /*Hunter Green*/
+  --extra-dark: #344E41; /*Pine Teal*/
+}
+
+body {
+  background-color: var(--background);
+}
+
+header {
+  background-color: var(--medium);
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  color: var(--text);
+}
+
+.navigation {
+  margin: 30px 0px 0px 0px;
+}
+
+
+.formContainer {
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 500px;
+  height: 450px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 100px 0px 0px 0px;
+
+  background-color: var(--dark);
+  border: 3px solid var(--extra-dark);
+  border-radius: 5px;
+}
+
+.formTitle {
+  flex-basis: 50px;
+  font-size: 30px;
+}
+
+#loginTitle {
+  flex-basis: 175px;
+}
+
+.formContent {
+  justify-self: flex-start;
+}
+
+.feildGroup {
+  font-size: 22px;
+
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  margin: 25px 0px 0px 0px
+}
