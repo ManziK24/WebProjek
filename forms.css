@@ -33,7 +33,9 @@ header {
   flex-direction: column;
 
   width: 500px;
+  padding-bottom: 32px;
   height: 450px;
+
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -57,11 +59,61 @@ header {
   justify-self: flex-start;
 }
 
-.feildGroup {
+.fieldGroup {
   font-size: 22px;
 
   display: flex;
   width: 400px;
   justify-content: space-between;
   margin: 25px 0px 0px 0px
+}
+
+.checkboxRow {
+  flex-direction: row !important;
+  align-items: center;
+  gap: 10px;
+}
+ 
+.checkboxRow label {
+  margin-bottom: 0 !important;
+  font-size: 0.85rem;
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--light);
+}
+ 
+.fieldGroup input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  accent-color: var(--medium);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.btn {
+  width: 380px;
+  margin-top: 26px;
+  padding: 11px;
+  background-color: var(--medium);
+  color: var(--white);
+  font-size: 0.95rem;
+  font-family: Georgia, serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid var(--light);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+ 
+.btn:hover {
+  background-color: var(--extra-dark);
+  border-color: var(--medium);
+}
+
+.form-links {
+ display: inline-flex;
+  margin-top: 0px;
+  gap: 10px;
+  
 }

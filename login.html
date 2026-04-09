@@ -4,6 +4,8 @@
     <title>Ebay Clone</title>
     <link rel="stylesheet" href="forms.css">
     <meta name="author" content="THE A TEAM">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
   </head>
 
 
@@ -19,7 +21,7 @@
       <div class="navigation">
         <a href="./login.html">Login</a> |
         <a href="./signup.html">Sign Up</a> |
-        <a href="./catagories.html">Catagories</a> |
+        <a href="./categories.html">Categories</a> |
         <a href="./aboutme.html">About Us</a> |
       </div>
      </nav>
@@ -32,16 +34,26 @@
           <h2>Login</h2>
         </div>
 
-        <form class="formContent" id="loginForm">
-          <div class="feildGroup">
+        <form class="formContent" id="loginForm" method="POST" action="login.php">
+          <div class="fieldGroup">
             <label for="userName">Username</label>
-            <input type="text" id="userName" placeholder="John123">
+            <input type="text" id="userName" name="userName" placeholder="John123" required>
           </div>
 
-          <div class="feildGroup">
+          <div class="fieldGroup">
             <label for="password">Password</label>
-            <input type="password" id="password" placeholder="password">
+            <input type="password" id="password" name="password" placeholder="password" required>
           </div>
+
+             <button type="submit" class="btn" name="login">Login</button>
+        </form>
+
+      <div>
+          <div class = "form-links">
+            <p> Don't have an account yet? <a href="./signup.html"> Sign Up</a></p>
+          </div>
+      </div>
+
         </form>
       </div>
     </main>
