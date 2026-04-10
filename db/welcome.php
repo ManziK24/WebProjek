@@ -1,3 +1,7 @@
+/*The A Team
+Manzi Karama, Nathan Skerritt, Andrew Dopplinger
+Generates welcome page on user login*/
+
 <?php 
 session_start();
 //var_dump($_POST); //FOR DEBUGGING ONLY

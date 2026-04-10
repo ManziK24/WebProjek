@@ -1,3 +1,7 @@
+/*The A Team
+Manzi Karama, Nathan Skerritt, Andrew Dopplinger
+Checks database for login credentials*/
+
 <?php
 //var_dump($_POST); //FOR DEBUGGING ONLY
 //die();

@@ -1,3 +1,7 @@
+/*The A Team
+Manzi Karama, Nathan Skerritt, Andrew Dopplinger
+Opens connection to database*/
+
 <?php
 $host = 'localhost';      // or your DB host
 $dbname = 'ebay_clone'; // your DB name

@@ -1,3 +1,7 @@
+/*The A Team
+Manzi Karama, Nathan Skerritt, Andrew Dopplinger
+Creates entry for new user in database*/
+
 <?php 
 //var_dump($_POST); //FOR DEBUGGING ONLY
 //die();
