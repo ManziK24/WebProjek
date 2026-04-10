@@ -6,11 +6,11 @@
   padding: 25px 20% 0px 20%
 }
 
-.coverImage {
+.category {
   position: relative;
 }
 
-.coverImage img {
+.category img {
   width: 25vw;
   height: 500px;
   object-fit: cover;
