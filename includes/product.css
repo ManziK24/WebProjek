@@ -9,11 +9,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 50px 50px 0px 50px
+  padding: 50px 50px 0px 1%
 }
 
 .productPicture img {
-  width: 25vw;
+  width: 100%;
   height: 650px;
   object-fit: cover;
   border-radius: 12px;
@@ -22,7 +22,7 @@
 .productText {
   justify-self: start;
   flex-grow: 4;
-  padding: 0px 0px 0px 20px;
+  padding: 0px 0px 0px 1%;
 }
 
 .productTitle {
