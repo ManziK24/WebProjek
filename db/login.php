@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login'])) {
 
     $stmt->close();
     // Invalid credentials — send back with error
-    header("Location: login.html?error=1");
+    header("Location: ../pages/login.html?error=1");
     exit();
 
 } else {

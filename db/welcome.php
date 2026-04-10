@@ -6,7 +6,7 @@ include 'connect.php';
 
 // Check if the user is logged in, if not redirect to login page
 if (!isset($_SESSION['userName'])) {
-    header("Location: login.html");
+    header("Location: ../pages/login.html");
     exit();
 }
 ?>
@@ -17,7 +17,7 @@ if (!isset($_SESSION['userName'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome – Ebay Clone</title>
-    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="../includes/forms.css">
   </head>
   <body>
  
@@ -27,7 +27,7 @@ if (!isset($_SESSION['userName'])) {
       </div>
       <nav>
         <div class="navigation">
-          <a href="./categories.html">Categories</a>
+          <a href="../pages/categories.html">Categories</a>
           <a href="./logout.php">Logout</a>
         </div>
       </nav>

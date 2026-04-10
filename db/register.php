@@ -12,7 +12,7 @@ if (isset($_POST['signUp'])) {
 
     // Validate passwords match
     if ($password !== $passwordConfirm) {
-        die("Passwords do not match. <a href='signup.html'>Go back</a>");
+        die("Passwords do not match. <a href='../pages/signup.html'>Go back</a>");
     }
  
 // Check if email already exists (prepared statement)
@@ -23,7 +23,7 @@ if (isset($_POST['signUp'])) {
  
     if ($stmt->num_rows > 0) {
         $stmt->close();
-        die("Email already registered. <a href='signup.html'>Go back</a>");
+        die("Email already registered. <a href='../pages/signup.html'>Go back</a>");
     }
     $stmt->close();
  
@@ -33,7 +33,7 @@ if (isset($_POST['signUp'])) {
  
     if ($stmt->execute()) {
         $stmt->close();
-        header("Location: login.html");
+        header("Location: ../pages/login.html");
         exit();
     } else {
         echo "Error: " . $conn->error;
@@ -43,7 +43,7 @@ if (isset($_POST['signUp'])) {
  
 } else {
     // Not a valid POST — send them back
-    header("Location: signup.html");
+    header("Location: ../pages/signup.html");
     exit();
 }
 ?>
