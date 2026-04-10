@@ -64,17 +64,48 @@ Users create accounts through this form-->
             <input type="checkbox" name="captcha" value="captcha" id="captcha" required>
           
           </div>
-          <button type="submit" class="btn" value="Sign Up" name="signUp" />Sign Up</button>
+          <button type="submit" class="btn" value="Sign Up" name="signUp">Sign Up</button>
         </form>
 
         <div>
           <div class = "form-links">
             <p> Already have an account? <a href="./login.html"> Sign In</a></p>
-      </div>
+          </div>
         </div>
+      </div>
     </main>
 
     <script>
+
+      const form = document.querySelector('#signupForm');
+
+      form.addEventListener('submit', handleSignup(event));
+
+/* Function is meant to intercept
+sign up form submission through the button and (not implemented) prevent it if 
+the passwords don't match, function syntax is somehow wrong which breaks the rest of
+the js so it's commented out. the inner comment is the code that's broken.
+Outer comment works however the function is unable to intercept submission, only 
+doing the alert when the page is returned to after the submission has already happened
+conceptually this means that the eventlistener calls the function only after the 
+submit goes through and therefore can't even hypothetically block submission so I've given up.
+
+      function handleSignup(event) {
+	alert('test');
+	event.preventDefault();
+//Broken code begins here
+	compareFields('password', 'passwordConfirm');
+	const formData = new FormData(myForm);
+	
+	  const response = await fetch('../db/register.php', {
+	    method: 'POST',
+	    body: formData
+	  });
+//Broken code ends here	  
+      } 
+*/
+
+
       function compareFields(f1, f2) {
 	
 	var val1 = document.getElementById(f1).value;
