@@ -13,7 +13,7 @@
 }
 
 .productPicture img {
-  width: 500px;
+  width: 25vw;
   height: 650px;
   object-fit: cover;
   border-radius: 12px;
