@@ -1,32 +1,3 @@
-:root {
-  /*colorscheme*/
-  --background: #DAD7CD; /*dust grey*/
-  --text: #000000; /*black*/
-  --light: #A3B18A; /*Dry Sage*/
-  --medium: #588157; /*Fern*/
-  --dark: #3A5A40; /*Hunter Green*/
-  --extra-dark: #344E41; /*Pine Teal*/
-}
-
-body {
-  background-color: var(--background);
-}
-
-header {
-  background-color: var(--medium);
-  display: flex;
-  justify-content: space-between;
-}
-
-.title {
-  margin: 0px 0px 0px 30px;
-  color: var(--text);
-}
-
-.navigation {
-  margin: 30px 30px 0px 0px;
-}
-
 .carousel-container {
   width: 95%;
   margin: 15px auto;
