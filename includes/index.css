@@ -63,3 +63,7 @@ Formatting applied to landing page*/
 .carousel-track::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.sectionHeader {
+  text-align: center;
+}
