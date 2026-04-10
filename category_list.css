@@ -34,9 +34,22 @@ header {
   padding: 25px 20% 0px 20%
 }
 
+.category {
+  position: relative;
+}
+
 .coverImage img {
   width: 500px;
   height: 500px;
   object-fit: cover;
   border-radius: 12px;
+}
+
+.overlay {
+  position: absolute;
+  top: 50vh;
+  left: 45vw;
+  pointer-events: none;
+  flex-direction: column;
+  gap: 5px;
 }
