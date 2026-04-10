@@ -39,7 +39,7 @@ header {
 }
 
 .coverImage img {
-  width: 500px;
+  width: 25vw;
   height: 500px;
   object-fit: cover;
   border-radius: 12px;
